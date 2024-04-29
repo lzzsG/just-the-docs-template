@@ -1,33 +1,98 @@
-# MIT Digital Systems Notebook
+### 项目简介
 
-## 介绍
+此项目使用 Jekyll 的 "just-the-docs" 主题来创建一个简洁的文档网站。主要内容放置在 `docs` 文件夹内，网站首页通过根目录下的 `index.md` 文件进行配置。额外进行了主题的修改并添加了主题切换按钮。
 
-欢迎来到 MIT Digital Systems Notebook。在这里我们将集中探讨学习 MIT 的三门核心课程：MIT 6.004, MIT 6.175, 和 MIT 6.375，这些课程覆盖了计算机科学和电子工程的高级主题。
+### 环境设置
 
-## 课程内容
+#### 必需的软件
 
-- **MIT 6.004**：计算系统结构（Computation Structures）
-  - 基本的计算机系统构造块，包括处理器设计、存储器层次结构和异步序列器。
-  - 使用模拟工具和硬件描述语言设计和测试系统。
+- **Ruby** (包括 RubyGems, GCC, 和 Make)
+- **Jekyll**
+- **Bundler**
 
-- **MIT 6.175**：构造可靠的数字系统（Constructive Computer Architecture）
-  - 重点在于数字系统的构造，尤其是处理器设计。
-  - 学习数字逻辑、微架构、流水线和优化以及测试和验证技术。
+#### 安装指南
 
-- **MIT 6.375**：设计和实施数字系统（Design and Implementation of Digital Systems）
-  - 专注于使用现场可编程门阵列（FPGA）设计和实施数字系统。
-  - 理论到实践的全方位课程，强调实际操作和实验。
+##### Windows
 
-## 使用资源
+1. 安装 Ruby:
 
-我们依托 ChatGPT 对相关资源的翻译和解释，结合本站作者的整理和补充，帮助大家更好地理解这些复杂的概念。我们还将利用开源资料，鼓励大家主动掌握实际操作和实验，以加深理解和应用。
+   - 下载并安装 Ruby+Devkit 版本从 [RubyInstaller](https://rubyinstaller.org/downloads/)。
+   - 安装过程中，确保勾选 "Add Ruby to your PATH" 选项。
 
-## 提示
+2. 安装 Jekyll 和 Bundler:
 
-- ChatGPT 可能会出错，请注意检查重要信息。
-- 本站内容以课程原始表述为准，仅供参考和辅助理解。
-- 如发现任何问题，请在 issue 中反馈。
+   ```bash
+   gem install jekyll bundler
+   ```
 
-## 许可与致谢
+##### Linux
 
-感谢 MIT 和相关教育机构提供的丰富教学资源和材料。本项目不涉及任何商业利益，旨在为学习者提供一个深入探索计算机科学和工程领域的平台。
+1. 安装 Ruby (使用 rbenv 或 rvm):
+
+   - 安装 rbenv 和 ruby-build:
+
+     ```bash
+     sudo apt-get update
+     sudo apt-get install -y git curl libssl-dev libreadline-dev zlib1g-dev autoconf bison build-essential libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev
+     curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-installer | bash
+     ```
+
+   - 添加 rbenv 到 bash:
+
+     ```bash
+     echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+     echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+     exec $SHELL
+     ```
+
+   - 安装 Ruby:
+
+     ```bash
+     rbenv install 2.7.2
+     rbenv global 2.7.2
+     ```
+
+   - 检查 Ruby 安装:
+
+     ```bash
+     ruby -v
+     ```
+
+2. 安装 Jekyll 和 Bundler:
+
+   ```bash
+   gem install jekyll bundler
+   ```
+
+### 配置项目
+
+1. 克隆仓库：
+
+   ```bash
+   git clone https://github.com/lzzsG/just-the-docs-template.git
+   cd just-the-docs-template
+   ```
+
+2. 安装依赖：
+
+   ```bash
+   bundle install
+   ```
+
+3. 修改 `_config.yml` 文件以自定义网站设置（如标题、描述、URL 等）。
+
+4. 编辑 `index.md` 以设置首页内容。
+
+### 运行项目
+
+- 运行以下命令来启动 Jekyll 服务器，并启用实时重载功能：
+
+  ```bash
+  bundle exec jekyll serve --livereload
+  ```
+
+  访问 `http://localhost:4000` 在浏览器中查看网站。
+
+### 更多配置
+
+- 请参考 [just-the-docs官方文档](https://just-the-docs.com/) 来了解更多高级配置和自定义选项。
