@@ -66,12 +66,19 @@
 
 ### 配置项目
 
-1. 克隆仓库：
+1. 获取项目代码：
 
-   ```bash
-   git clone https://github.com/lzzsG/just-the-docs-template.git
-   cd just-the-docs-template
-   ```
+- **克隆仓库**：
+
+  ```bash
+  git clone https://github.com/example/just-the-docs-example.git
+  cd just-the-docs-example
+  ```
+
+- **使用模板**： 访问项目的 GitHub 页面，点击右上角的 “Use this template” 按钮。
+
+- **直接 Fork**： 访问项目的 GitHub 页面，点击右上角的 “Fork” 按钮，然后克隆你 Fork 的仓库```
+
 
 2. 安装依赖：
 
