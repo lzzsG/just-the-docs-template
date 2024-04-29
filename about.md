@@ -7,27 +7,30 @@ nav_order: 99
 
 # 更新历史
 
-<br/>
+<br/><br/>
 
-2024/4/22 add 6.004 L11-L12
-
-2024/4/21 rebuild this note site to highlight BSV
-
-2024/4/20 add 6.004 L9-L10, 6.175 Combinational Circuits
-
-2024/4/15 add Introduction and Resources
-
-2024/4/14 add 6.004 L7-L8
-
-2024/4/13 add 6.004 L5-L6
-
-2024/3/25 add 6.004 L1-L4
+2024/4/29 first commit
 
 ---
 
 # markdown and highlight test
 
+以下是markdown与highlight测试
+
 <br/>
+
+首先是一个可以收起的目录
+
+```jsx
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+```
 
 <details open markdown="block">
   <summary>
@@ -279,11 +282,11 @@ Some text
 
 ### Small image
 
-![](../../assets/images/small-image.jpg)
+![](../assets/images/small-image.jpg)
 
 ### Large image
 
-![](../../assets/images/large-image.jpg)
+![](../assets/images/large-image.jpg)
 
 "[Wroclaw University Library digitizing rare archival texts](https://www.flickr.com/photos/97810305@N08/9401451269)" by [j_cadmus](https://www.flickr.com/photos/97810305@N08) is marked with [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=openverse).
 
