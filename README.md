@@ -77,7 +77,7 @@
 
 - **使用模板**： 访问项目的 GitHub 页面，点击右上角的 “Use this template” 按钮。
 
-- **直接 Fork**： 访问项目的 GitHub 页面，点击右上角的 “Fork” 按钮，然后克隆你 Fork 的仓库```
+- **直接 Fork**： 访问项目的 GitHub 页面，点击右上角的 “Fork” 按钮，然后克隆你 Fork 的仓库
 
 
 2. 安装依赖：
