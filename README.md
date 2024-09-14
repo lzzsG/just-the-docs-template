@@ -1,10 +1,11 @@
-### 项目简介
+## just-the-docs-template 模板简介
+
 
 此项目使用 Jekyll 的 "just-the-docs" 主题来创建一个简洁的文档网站并自动化部署。主要内容放置在 `docs` 文件夹内，网站首页通过根目录下的 `index.md` 文件进行配置。额外进行了主题的修改并添加了主题切换按钮。
 
-### 环境设置
+## 环境设置
 
-#### 必需的软件
+### 必需的软件
 
 - **Ruby** (包括 RubyGems, GCC, 和 Make)
 - **Jekyll**
@@ -12,7 +13,7 @@
 
 #### 安装指南
 
-##### Windows
+#### Windows
 
 1. 安装 Ruby:
 
@@ -25,7 +26,7 @@
    gem install jekyll bundler
    ```
 
-##### Linux
+#### Linux
 
 1. 安装 Ruby (使用 rbenv 或 rvm):
 
@@ -64,7 +65,7 @@
    gem install jekyll bundler
    ```
 
-### 配置项目
+## 配置项目
 
 1. 获取项目代码：
 
@@ -90,7 +91,7 @@
 
 4. 编辑 `index.md` 以设置首页内容。
 
-### 运行项目
+## 运行项目
 
 - 运行以下命令来启动 Jekyll 服务器，并启用实时重载功能：
 
@@ -100,6 +101,6 @@
 
   访问 `http://localhost:4000` 在浏览器中查看网站。
 
-### 更多配置
+## 更多配置
 
 - 请参考 [just-the-docs官方文档](https://just-the-docs.com/) 来了解更多高级配置和自定义选项。
